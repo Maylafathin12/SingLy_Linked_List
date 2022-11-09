@@ -82,6 +82,24 @@ namespace SingLy_Linked_List
                 previous = current;
                 current = current.next;
             }
+            if (current == null)
+                return (false);
+            else
+                return (true);
         }
+        public void traverse()
+        {
+            if (ListEmpty())
+                Console.WriteLine("\nList Kosong. \n");
+            else
+            {
+                Console.WriteLine("\nData didalam list adalah : \n");
+                Node currentNode;
+                for (currentNode = START; currentNode != null; currentNode = currentNode.next)
+                Console.WriteLine(currentNode.noMhs + "" + currentNode.nama + "\n");
+                Console.WriteLine();
+            }
+        }
+        
     }
 }
