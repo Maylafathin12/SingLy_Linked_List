@@ -29,7 +29,11 @@ namespace SingLy_Linked_List
 
             if (START == null || nim <= START.noMhs)
             {
-
+                if ((START == null) && (nim == START.noMhs))
+                {
+                    Console.WriteLine("\nNomor mahasiswa sama tidak diizinkan");
+                    return;
+                }
             }
         }
     }
