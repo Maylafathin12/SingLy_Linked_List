@@ -72,6 +72,16 @@ namespace SingLy_Linked_List
                 START = START.next;
             return true;
         }
+    public bool Search(int nim, ref Node previous, ref Node current)
+        {
+            previous = START;
+            current = START;
 
+            while ((current != null) && (nim != current.noMhs))
+            {
+                previous = current;
+                current = current.next;
+            }
+        }
     }
 }
