@@ -53,7 +53,11 @@ namespace SingLy_Linked_List
                 previous = current;
                 current = current.next;
              }
+            //node baru akan ditempatkan diantara previous dan current
 
+            nodebaru.next = current;
+            previous.next = nodebaru;
         }
+        //method untuk mmenghapus node tertentu
     }
 }
