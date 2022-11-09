@@ -58,6 +58,20 @@ namespace SingLy_Linked_List
             nodebaru.next = current;
             previous.next = nodebaru;
         }
-        //method untuk mmenghapus node tertentu
+        //method untuk mmenghapus node tertentu didaalam list
+        public bool delNode(int nim)
+        {
+
+            Node previous, current;
+            previous = current = null;
+            //chek apakah node yang dimaksud ada didalam list  atau tidak
+            if (Search(nim, ref previous, ref current) == false)
+                return false;
+            previous.next = current.next;
+            if (current == START)
+                START = START.next;
+            return true;
+        }
+
     }
 }
