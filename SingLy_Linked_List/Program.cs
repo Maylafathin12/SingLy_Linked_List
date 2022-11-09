@@ -2,11 +2,11 @@
 
 namespace SingLy_Linked_List
 {
-    class Program
+    class Node
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");.
-        }
+        public int noMhs;
+        public string nama;
+        public Node next;
     }
+
 }
